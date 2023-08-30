@@ -273,3 +273,61 @@ public class MainAppl {
 //}
 //
 //}
+
+
+
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+public class YourTestClassTest {
+
+    private YourTestClass yourTestClass;
+    private JdbcTemplate jdbcTemplate;
+
+    @BeforeMethod
+    public void setUp() {
+        yourTestClass = new YourTestClass(); // Replace with the actual class name
+
+        // Create a simple stub for JdbcTemplate (you would typically use a real one)
+        jdbcTemplate = new JdbcTemplate();
+        yourTestClass.setJdbcTemplate(jdbcTemplate);
+    }
+
+    @Test
+    public void testIslaptopExists() {
+        // Simulate a simple query result
+        jdbcTemplate.update("INSERT INTO laptop (name) VALUES ('your_laptop_name')");
+        
+        // Test the islaptopExists method
+        boolean result = yourTestClass.islaptopExists("your_laptop_name");
+        assertEquals(true, result);
+    }
+
+    @Test
+    public void testMapRow() throws SQLException {
+        // Create a simple mock ResultSet
+        ResultSet resultSet = new SimpleResultSet();
+        resultSet.addColumn("name");
+        resultSet.addColumn("version");
+        resultSet.addColumn("company");
+        resultSet.addColumn("ram");
+        resultSet.addRow("laptop1", "v1", "Company A", "8GB");
+
+        // Test the mapRow method
+        RowMapper<laptop> rowMapper = yourTestClass.getRowMapper();
+        laptop laptopObj = rowMapper.mapRow(resultSet, 0);
+
+        assertEquals("laptop1", laptopObj.getName());
+        assertEquals("v1", laptopObj.getVersion());
+        assertEquals("Company A", laptopObj.getCompany());
+        assertEquals("8GB", laptopObj.getRam());
+    }
+}
