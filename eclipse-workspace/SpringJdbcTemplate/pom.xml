@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SpringJdbcTemplate</groupId>
+  <artifactId>SpringJdbcTemplate</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>SpringJdbcTemplateExample</name>
+    <dependencies>
+        <!-- Spring Framework Dependencies -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>4.0.3.RELEASE</version>
+        </dependency>
+        <!-- PostgresSQL  Connector Java Dependency -->
+        <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.2.23</version>
+      </dependency>
+  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+     <dependency>
+       <groupId>org.testng</groupId>
+       <artifactId>testng</artifactId>
+          <version>7.4.0</version>
+       <scope>test</scope>
+  </dependency>
+      <!-- H2 Database Dependency Maven Repository -->
+         <dependency>
+          <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+         <version>1.4.200</version>
+       <scope>test</scope>
+  </dependency>
+
+ 
+</dependencies>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+</project>
