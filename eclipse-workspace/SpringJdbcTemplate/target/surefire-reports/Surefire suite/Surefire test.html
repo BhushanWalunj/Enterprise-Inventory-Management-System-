@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 09 11:16:15 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (98 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.check()'><b>check</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: a, b, 195</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.Arrange()'><b>Arrange</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: direct, gamer</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.sub()'><b>sub</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 11, 24, -13<br/>
+<a href="#Output-992802731" onClick='toggleBox("Output-992802731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-992802731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-992802731">
+dataProvider used by sub method is DP1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.divi()'><b>divi</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 9, 3, 3<br/>
+<a href="#Output-1405747618" onClick='toggleBox("Output-1405747618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1405747618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1405747618">
+dataProvider used by  method is DP3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.divi()'><b>divi</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 1, 1, 1<br/>
+<a href="#Output-1526298704" onClick='toggleBox("Output-1526298704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526298704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526298704">
+dataProvider used by  method is DP3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.check()'><b>check</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: b, b, 196</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.mul()'><b>mul</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 12, 13, 156<br/>
+<a href="#Output-1524126153" onClick='toggleBox("Output-1524126153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1524126153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1524126153">
+dataProvider used by mul method is DP2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.mul()'><b>mul</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 12, 12, 144<br/>
+<a href="#Output-715521683" onClick='toggleBox("Output-715521683", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-715521683" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-715521683">
+dataProvider used by mul method is DP2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.sub()'><b>sub</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 23, 34, -11<br/>
+<a href="#Output-973576304" onClick='toggleBox("Output-973576304", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-973576304" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-973576304">
+dataProvider used by sub method is DP1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.Arrange()'><b>Arrange</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: weather, Lend</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.mul()'><b>mul</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 44, 1, 44<br/>
+<a href="#Output-1545242146" onClick='toggleBox("Output-1545242146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1545242146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1545242146">
+dataProvider used by mul method is DP2<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+<tr>
+<td title='com.jcg.spring.jdbctemplate.SkipTest.divi()'><b>divi</b><br>Test class: com.jcg.spring.jdbctemplate.SkipTest<br>Parameters: 20, 5, 4<br/>
+<a href="#Output-898406901" onClick='toggleBox("Output-898406901", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-898406901" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-898406901">
+dataProvider used by  method is DP3<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.jcg.spring.jdbctemplate.SkipTest@6fb0d3ed</td></tr>
+</table><p>
+</body>
+</html>

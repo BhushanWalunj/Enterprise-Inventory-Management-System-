@@ -1,8 +1,9 @@
 package com.jcg.spring.jdbctemplate;
 import java.util.*;
-
-public class HelloWorld {
-    Scanner s = new Scanner(System.in);
+import org.apache.logging.log4j.Logger;
+class HelloWorld {
+    
+	Scanner s = new Scanner(System.in);
     int a = 12;
     String b = "kelto";
     String sb = null;

@@ -1,10 +1,11 @@
 package com.jcg.spring.jdbctemplate;
-class Stack
+
+class Stacks
 {
 	int top;
 	int[] arr;
 	int capa;
-	Stack(){
+	Stacks(){
 		this.top = -1;
 		this.capa = 6;
 		arr = new int[capa];
@@ -41,10 +42,10 @@ class Stack
 	
 	
 }
-public class DLL {
+public class STACK {
 
 	public static void main(String[] args) {
-	  Stack s = new Stack();
+	  Stacks s = new Stacks();
 	  s.push(1);
 	  s.push(3);
 	  s.push(5);
@@ -55,5 +56,7 @@ public class DLL {
 	  s.pop();
 	  s.peek();
 	}
+
+
 
 }

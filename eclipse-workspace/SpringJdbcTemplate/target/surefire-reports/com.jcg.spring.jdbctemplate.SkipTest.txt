@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.jcg.spring.jdbctemplate.SkipTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.643 s -- in com.jcg.spring.jdbctemplate.SkipTest

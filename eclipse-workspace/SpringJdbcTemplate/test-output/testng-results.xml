@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Concat Test Passed]]>
+    </line>
+    <line>
+      <![CDATA[EvenOdd tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[EvenOdd tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[EvenOdd tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[Multiply tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[Multiply tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[Multiply tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[TestmyTest tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[TestmyTest tested successfully]]>
+    </line>
+    <line>
+      <![CDATA[TestmyTest tested successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-11-09T11:38:39 IST" name="Default suite" finished-at="2023-11-09T11:38:39 IST" duration-ms="150">
+    <groups>
+    </groups>
+    <test started-at="2023-11-09T11:38:39 IST" name="Default test" finished-at="2023-11-09T11:38:39 IST" duration-ms="150">
+      <class name="com.jcg.spring.jdbctemplate.DataProvide">
+        <test-method signature="concat(java.lang.String,java.lang.String,java.lang.String)[pri:-4, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="concat" data-provider="self" finished-at="2023-11-09T11:38:39 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lempon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DrostLempon]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Concat Test Passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- concat -->
+        <test-method signature="evenodd(int,int,int)[pri:-4, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="evenodd" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[EvenOdd tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- evenodd -->
+        <test-method signature="evenodd(int,int,int)[pri:-4, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="evenodd" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[EvenOdd tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- evenodd -->
+        <test-method signature="evenodd(int,int,int)[pri:-4, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="evenodd" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[EvenOdd tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- evenodd -->
+        <test-method signature="testdp3(java.lang.String,java.lang.String,boolean)[pri:-3, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="testdp3" data-provider="Dp3" finished-at="2023-11-09T11:38:39 IST" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bluettttt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[redt]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.jcg.spring.jdbctemplate.DataProvide.testdp3(DataProvide.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdp3 -->
+        <test-method signature="testdp3(java.lang.String,java.lang.String,boolean)[pri:-3, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="testdp3" data-provider="Dp3" finished-at="2023-11-09T11:38:39 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[green444444]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[blue]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.jcg.spring.jdbctemplate.DataProvide.testdp3(DataProvide.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdp3 -->
+        <test-method signature="multiply(int,int,int)[pri:0, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="multiply" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Multiply tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- multiply -->
+        <test-method signature="multiply(int,int,int)[pri:0, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="multiply" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Multiply tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- multiply -->
+        <test-method signature="multiply(int,int,int)[pri:0, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="multiply" data-provider="DP2" finished-at="2023-11-09T11:38:39 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Multiply tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- multiply -->
+        <test-method signature="myTest(int,int,int)[pri:1, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="myTest" data-provider="data-provider" finished-at="2023-11-09T11:38:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestmyTest tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method signature="myTest(int,int,int)[pri:1, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="myTest" data-provider="data-provider" finished-at="2023-11-09T11:38:39 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestmyTest tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+        <test-method signature="myTest(int,int,int)[pri:1, instance:com.jcg.spring.jdbctemplate.DataProvide@add0edd]" started-at="2023-11-09T11:38:39 IST" name="myTest" data-provider="data-provider" finished-at="2023-11-09T11:38:39 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestmyTest tested successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- myTest -->
+      </class> <!-- com.jcg.spring.jdbctemplate.DataProvide -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

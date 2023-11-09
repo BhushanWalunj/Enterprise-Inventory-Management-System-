@@ -1,0 +1,17 @@
+<suite name="test_suite">  
+   <groups>  
+      <run>  
+         <include name="UI Test"/>  
+      </run>  
+   </groups>  
+  <test name="Check Login Page">  
+     <classes>  
+         <class name="com.demoqa.Check_Login_Page"/>  
+         </classes>  
+     </test>  
+     <test name="Response Status">  
+    <classes>  
+       <class name="com.demoqa.Response_Status"/>  
+    </classes>  
+    </test>  
+</suite>

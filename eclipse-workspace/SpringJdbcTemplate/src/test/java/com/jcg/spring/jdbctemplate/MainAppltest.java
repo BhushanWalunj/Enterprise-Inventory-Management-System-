@@ -1,18 +1,21 @@
 package com.jcg.spring.jdbctemplate;
+import com.jcg.spring.jdbctemplate.*;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.sql.SQLException;
 import java.util.List;
 
 @Test
 public class MainAppltest {
 
-    MainAppl s = new MainAppl();
+    JDBCSource s = new JDBCSource();
     
     @Test
-    public void testCreateTable() {
+    public void testcreateTable() {
         String expectedQuery = "CREATE TABLE IF NOT EXISTS laptop (" +
                 "name VARCHAR(100), " +
                 "version VARCHAR(100), " +
@@ -23,22 +26,26 @@ public class MainAppltest {
         
         Assert.assertEquals(actualCreateQuery,expectedQuery);
     }
-
+    @Test
+    public void SampleTest1() throws SQLException {
+    	int output = 1;
+    	
+    	Assert.assertEquals(1, output);
+    }
+    
+    
     @Test
     public void testInsertRecords() {
-        String expectedInsertQuery = "INSERT INTO laptop(name, version ,company ,ram) VALUES (?, ?, ?, ?)";
+        String expectedInsertQuery = "INSERT INTO laptop(name, version ,company ,ram) VALUES (?,?,?,?)";
         Assert.assertEquals(s.sqlInsertQuery, expectedInsertQuery);
     }
-    @Test
-    public void testUserinput() {
-    	Assert.assertTrue(s.a>=0 && s.a<=3);
-    }
-
+    
     @Test
     public void testUpdateRecords() {
         String expectedUpdateQuery = "UPDATE laptop SET ram=? WHERE name=? and company=?";
         Assert.assertEquals(s.sqlUpdateQuery, expectedUpdateQuery);
     }
+    
 
     @Test
     public void testDeleteRecords() {
@@ -47,8 +54,8 @@ public class MainAppltest {
     }
     
     @Test
-    public void testIsContactExists() {
-        boolean contactExists = s.islaptopExists("SampleName");
+    public void testIsExists() {
+        boolean contactExists = s.islaptopExists("MSI");
 
         Assert.assertTrue(contactExists);
     }
@@ -56,10 +63,16 @@ public class MainAppltest {
     public void testPerformDatabaseOperations_Insert() {
         
     }
+    @Test
+    public void testIslaptopExists() {
+        boolean result = s.islaptopExists("MSI");
+        Assert.assertEquals(true, result);
+    }
     @AfterTest
     public void afterTest() {
         System.out.println("Test execution end");
     }
+    
     
     
     

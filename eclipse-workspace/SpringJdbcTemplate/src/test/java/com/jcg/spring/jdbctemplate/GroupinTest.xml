@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="test_suite">   
+  <test name="Check Page">  
+      <groups>  
+         <run>  
+            <include name="UI Test"/>  
+         </run>  
+      </groups> 
+     <classes>  
+         <class name="Check_Page"/>  
+         </classes>  
+     </test>  
+     <test name="Response Status">  
+    <classes>  
+       <class name="Response_Status"/>  
+    </classes>  
+    </test>  
+</suite>
