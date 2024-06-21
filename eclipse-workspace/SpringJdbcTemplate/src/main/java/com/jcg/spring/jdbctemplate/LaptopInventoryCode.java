@@ -43,17 +43,12 @@ public class JDBCSource {
         int creation = jdbcTemplateObj.update(createTableQuery);
         return creation;
     }
-
-   
-    
     String name;
     String version;
     String company;
     String ram;
-    
-    
-    
-   	public void insertData() {
+
+   public void insertData() {
     
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of laptop information to add:");
@@ -65,19 +60,14 @@ public class JDBCSource {
         {
             System.out.println("Enter details for laptop " + (j + 1));
             System.out.print("Name: ");
-//          name = "ALZURAS";
             name = scanner.nextLine();
             if (!islaptopExists(name)) {
                 System.out.print("version: ");
-//              version = "13.24";
                 version = scanner.nextLine();
                 System.out.print("company: ");
-//              company = "Morocco";
                 company = scanner.nextLine();
                 System.out.print("ram: ");
-//              ram = "76gb";
                 ram = scanner.nextLine();
-
                 int update = jdbcTemplateObj.update(sqlInsertQuery, name, version ,company ,ram);
             } else
             {
@@ -86,22 +76,14 @@ public class JDBCSource {
         }
         
     }
-
-   	
     public void updateData() {
         sqlUpdateQuery = "UPDATE laptop SET ram=? WHERE name=? and company=?";
         jdbcTemplateObj.update(sqlUpdateQuery,"97gb","Sny","Samsung");
     }
-
-    
-    
     public void deleteData() {
         sqlDeleteQuery = "DELETE FROM laptop WHERE name = ?";
         jdbcTemplateObj.update(sqlDeleteQuery,"Newzen");
     }
-
-    
-    
     public List<laptop> displayData() {
         sqlSelectQuery = "SELECT name, version, company, ram FROM laptop";
         List<laptop> listlaptops = jdbcTemplateObj.query(sqlSelectQuery, new RowMapper<laptop>() {
@@ -116,25 +98,21 @@ public class JDBCSource {
         });
         for (laptop laptopDetail : listlaptops) {
             System.out.println(laptopDetail);
-            
         }
         return listlaptops;
     }
-
-    
      boolean islaptopExists(String name) {
         String sqlSelectQuery = "SELECT COUNT(*) FROM laptop WHERE name=?";
         int count = jdbcTemplateObj.queryForObject(sqlSelectQuery, Integer.class, name);
         return count > 0;
     }
-
-   public static void main(String[]args) throws SQLException {
-    	  JDBCSource j = new JDBCSource();
-    	  j.createTable();
-          j.insertData();
-          j.updateData();
-          j.deleteData();
-          j.displayData();
+   // public static void main(String[] args) throws SQLException {
+   //  	  JDBCSource j = new JDBCSource();
+   //  	  j.createTable();
+   //        j.insertData();
+   //        j.updateData();
+   //        j.deleteData();
+   //        j.displayData();
  
-     } 
+   //   } 
 }
